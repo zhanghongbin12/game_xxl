@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5仿腾讯QQ开心消消乐小游戏</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<link rel="stylesheet" href="css/style.css"/>
+	<style>
+		#fen{
+			transition: 1s;
+			color: cornflowerblue;
+			font-size: 20px;
+			font-weight: 600;
+			opacity:1;
+		}
+		.htmleaf-content .animate{
+			animation:my 3s;
+		}
+		#db{
+			float: left;
+			color:red;
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 28px;
+			margin-left:20px;
+		}
+		#currtent{
+			float: left;
+			color:#56FF56;
+			font-size: 18px;
+			line-height: 28px;
+			margin-right:20px;	
+		}
+		@keyframes my{   /* 得分的动画*/
+			from{color:white;opacity:0;}
+			to{color:cornflowerblue;opacity:1;}
+		}
+	</style>
+</head>
+<body>
+	<div class="htmleaf-container">
+
+		<div class="htmleaf-content">
+			<ul id="ul1"></ul>
+			<div style='text-align: left;width: 490px;height: 490px;margin: auto;'>
+				<div id='currtent'>
+					当前第1关
+				</div>
+				<div id='fen-content' style='float:left;'>
+					当前得分：<span id='fen'>0</span>
+				</div>
+				<div id='db'>闯关达标：</div>
+				<div id='time' style='float:right;color: #EAFB5A;'>02 : 00</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/xxl.js"></script>
+</body>
+</html>
